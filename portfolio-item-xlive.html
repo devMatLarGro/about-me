@@ -52,12 +52,15 @@
         </p>
 
         <p> 
-            Die Idee hinter xaxada live ist die Vermietung von Immobilien, insbesondere von Parkplätzen und Garagen.
-            Dabei fungiert xaxada live als Vermittlungsplattform zwischen Ver- und Mietern.
-            Das Projekt basiert auf dem Smart-Home-Konzept von 
-            <a href="https://devmatlargro.github.io/about-me/portfolio-item-xpro.html">xaxada professional.</a>.
-            Xaxada live nutzt die Funktionen von xaxada professional, um Türen, Tore, 
-            Lichter und weitere Elemente intelligent zu steuern - ein zentraler Bestandteil der Plattform.
+            Die Idee hinter xaxada live ist die digitale Vermittlung von Immobilien, 
+            insbesondere Parkplätzen und Garagen. Die Plattform fungiert dabei als 
+            Schnittstelle zwischen Vermietern und Mietern und ermöglicht eine intelligente 
+            Steuerung von Zugangs- und Steuerelementen.
+            Xaxada live basiert auf dem Smart-Home-Konzept von 
+            <a href="https://devmatlargro.github.io/about-me/portfolio-item-xpro.html">xaxada professional</a> und nutzt dessen 
+            Funktionen zur automatisierten Steuerung von Türen, Toren, Beleuchtung und weiteren Komponenten.
+            Die Steuerbefehle werden über das MQTT-Protokoll übertragen, um z.B. das Öffnen von 
+            Garagen zuverlässig und sicher auszulösen.
         </p>
         <img src="img/xaxada-live/xlive-login.png" alt="">
         
@@ -76,15 +79,18 @@
         
         <img src="img/xaxada-live/screenshot_go.xaxadalive-mapview.png" alt="">
         <p> 
-            Im Rahmen dieses Projekts habe ich den Umgang mit verschiedenen APIs erlernt. 
-            Dazu gehörten unter anderem die Post-Adressverifizierungs-API zur Validierung von Garagenstandorten 
-            sowie die Google Maps API, um den genauen Standort der Garage und des Mieters zu ermitteln 
-            und visuell darzustellen - wie auf dem obigen Bild ersichtlich.
+            Im Rahmen dieses Projekts habe ich praktische Erfahrungen im Umgang mit verschiedenen APIs gesammelt. 
+            Dazu zählen unter anderem die Post-Adressverifizierungs-API zur Validierung von Garagenstandorten 
+            sowie die Google Maps API zur genauen Standortbestimmung und visuellen Darstellung der Garage und 
+            des Mieters - wie auf dem oberen Bild zu sehen. Das Frontend wurde mit Vue.js entwickelt, während die 
+            serverseitige REST-API mit C#.NET umgesetzt wurde. Der unten dargestellte Screenshot aus 
+            Swagger zeigt verschiedene Endpunkte, darunter z.B. 
+            die Überprüfung der räumlichen Nähe eines Mieters zur 
+            Garage als Voraussetzung für Steuerbefehle sowie die Adressverifikations-Endpunkte.
         </p>
-
-        <img src="img/xaxada-live/xaxada-live_swagger-api.png" alt="">
+        <img src="img/xaxada-live/xaxada-live_swagger-api.png" alt="" style="max-height: 700px;">
+        
         <p> 
-            Das Frontend wurde mit Vue.js entwickelt, während die REST-API mit C#.NET umgesetzt wurde.
             Der gesamte Code wurde über unseren internen GitLab-Server versioniert.
             Die Zusammenarbeit in einem Entwicklungsteam kann herausfordernder sein, 
             als man anfangs denkt - und so wurde mein Git-Wissen ordentlich auf die Probe gestellt.
